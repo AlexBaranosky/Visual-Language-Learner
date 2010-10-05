@@ -3,8 +3,8 @@
     <h2>Flash cards for your right brain</h2>
 </hgroup>
 
-<h3>Image</h3>
-<%= @image_names %>
+<h3><%= @image.name %></h3>
+<%= image_tag(@image.original) %>
 
 <%= form_for(Words.new) do |f| %>
     <%= f.label "Enter the words that you want to learn below:" %><br />

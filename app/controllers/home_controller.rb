@@ -1,5 +1,7 @@
 class HomeController < ApplicationController
+  IMAGE_FETCHER = ImageFetcher.new('cow', 'cheese', 'goat')
+
   def index
-    @image_names = ImageFetcher.new('cow', 'cheese', 'goat').random_image.map { |i| i.name }
+    @image = IMAGE_FETCHER.random_image
   end
 end
