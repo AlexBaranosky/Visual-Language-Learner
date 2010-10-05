@@ -3,6 +3,12 @@
     <h2>Flash cards for your right brain</h2>
 </hgroup>
 
-<p>Enter the words that you want to learn below:</p>
-<p>too be continued...</p>
+<h3>Image</h3>
+<%= @image_names %>
+
+<%= form_for(Words.new) do |f| %>
+    <%= f.label "Enter the words that you want to learn below:" %><br />
+    <%= f.text_area :words %><br />
+    <%= f.submit %>
+<% end %>
 

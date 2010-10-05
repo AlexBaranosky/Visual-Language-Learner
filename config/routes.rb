@@ -1,5 +1,12 @@
 VisualLanguageLearner::Application.routes.draw do
-  get "home/index"
+
+  resources :words
+
+  get 'home/index'
+
+  match 'words/index', :to => 'words#index'
+
+  match '/:controller(/:action(/:id))'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
