@@ -5,7 +5,6 @@ require File.dirname(__FILE__) + '/classes/image_fetcher'
 
 class VisualLanguageLearner < Sinatra::Base
   get '/' do
-    @image = nil
     erb :index
   end
 
