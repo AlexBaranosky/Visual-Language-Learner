@@ -10,9 +10,7 @@ class VisualLanguageLearner < Sinatra::Base
   end
 
   post '/image' do
-    p params
     words = params[:words].strip.split(/\s+/)
-    p words
     @image = ImageFetcher.new(*words).random_image
     erb :image
   end
