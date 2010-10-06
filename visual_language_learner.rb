@@ -14,5 +14,3 @@ class VisualLanguageLearner < Sinatra::Base
     erb :image
   end
 end
-
-VisualLanguageLearner.run!
