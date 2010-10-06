@@ -1,0 +1,6 @@
+- if @image
+  %img{:alt => @image.name, :src => @image.original}
+- else
+  %h1 Sorry, no images found!
+%br
+%a{:href => "/"} Back

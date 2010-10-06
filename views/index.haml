@@ -1,0 +1,9 @@
+%hgroup
+  %h1 Visual Language Learner
+  %h2 Flash cards for your right brain
+%form{:action => "/image", :method => "post"}
+  %label{:for => "words-id"} Enter the words that you want to learn:
+  %br
+  %textarea#words-id{:cols => "40", :name => "words", :rows => "6"}
+  %br
+  %input.button{:type => "submit", :value => "Show Image!"}
